@@ -29,30 +29,30 @@ class ItemSidebar extends BaseElement {
 
     return html`
       <div class="wrapper">
-        <h2>Items To Bring</h2>
+        <h2>Objets &agrave; prendre</h2>
         <h3 
           class="legend-label" 
           @click=${handleShowLegendToggle}
           ?show=${showLegend}
-        >Legend</h3>
+        >L&eacute;gende</h3>
         <ul class="legend" ?show=${showLegend}>
           <li>
-            <span class="quantity">3x</span> take max
+            <span class="quantity">3x</span> en prendre le max
           </li>
           <li less>
-            <span class="quantity">3x</span> less than max
+            <span class="quantity">3x</span> en moins que le max
           </li>
           <li none>
             <span class="quantity">0x</span>
-            means take none
+            aucun exemplaire autoris&eacute;
           </li>
           <li under>
             <span class="quantity">1x</span>
-            means the game forces you to take this quantity but don't use it
+            le jeu en donne un par d&eacute;faut, mais ne pas l'utiliser
           </li> 
           <li>
             <span class="required">(1)</span>
-            means a challenge requires bringing at least this many of this item
+            en prendre au minimum (1)
           </li>       
         </ul>
         <hr />

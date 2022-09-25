@@ -5,45 +5,22 @@ class ItemSidebar extends BaseElement {
   render() {
     return html`
       <div class="wrapper">
-        <h2>Help &amp; About</h2>
-        <h3>Help</h3>
+        <h2>Aide &amp; A propos</h2>
+        <h3>Aide</h3>
         <ul>
-          <li>
-            Click a player name to modify.
-          </li>
-          <li>
-            Click a spinner to spin or click Spin All to spin them all at once.
-          </li>
-          <li>
-            Once it stops, you can see details of the rules by clicking the <i class="icon help"></i> next to them.
-          </li>
-          <li>
-            Use the <span><i class="icon team"></i> Team Rules</span> and 
-            <span><i class="icon personal"></i> Personal Rules</span> panels to activate and deactivate rules in the spinner.
-          </li>
-          <li>
-            Check the <span><i class="icon items"></i> Items to Bring</span> tab to see what to bring based on 
-            item restrictions from rules.
-          </li>
-          <li>
-            The URL updates as things change and going to the same URL will recreate it the same way, so you can
-            share your favorite sets of rules or the results of a spin, or just bookmark your team names.
-          </li>
-        </ul>
-        <h3>About</h3>
-        <ul>
-          <li>
-            Phasmo-Wheel is inspired by the work of sullyr0x and many contributors.
-          </li>
-          <li>
-            Check out the <a href="https://discord.gg/UPEceAz" target="_blank">Phasmo-Wheel Discord</a> to learn more.
-          </li>
-          <li>
-            Site created by <a href="https://steamcommunity.com/profiles/76561198042481118/" target="_blank">Koga</a>.
-          </li>
-          <li>
-            Code is open-source and hosted on <a href="https://github.com/samanime/phasmo-wheel" target="_blank">GitHub</a>.
-          </li>
+          <li>Cliquez sur le nom d'un joueur &agrave; modifier.</li>
+          <li>Cliquez sur une roulette pour la faire tourner ou cliquez sur "Tout tourner" pour les faire tourner toutes en m&ecirc;me temps.</li>
+          <li>Une fois que les roues se sont arr&ecirc;t&eacute;es, vous pouvez voir les d&eacute;tails des r&egrave;gles en cliquant sur l'ic&ocirc;ne <i class="icon help"></i> &agrave; c&ocirc;t&eacute; d'elles.</li>
+          <li>Utilisez les panneaux <span><i class="icon team"></i> R&egrave;gles d'&eacute;quipe</span> et <span><i class="icon personal"></i> R&egrave;gles personnelles</span> pour activer et d&eacute;sactiver les r&egrave;gles dans la roue.</li>
+          <li>V&eacute;rifiez les <span><i class="icon items"></i> &eacute;quipements &agrave; prendre</span> pour voir ce qu'il faut apporter en fonction des restrictions des r&egrave;gles.</li>
+          <li>L'URL se met &agrave; jour au fur et &agrave; mesure que les r&egrave;gles changent permettant de partager la partie avec les membres de l'&eacute;quipe, ou partager vos presets de r&egrave;gles pr&eacute;f&eacute;r&eacute;s</li>
+          </ul>
+          <h3>&Agrave; propos</h3>
+          <ul>
+          <li>Phasmo-Wheel est inspir&eacute; par le travail de sullyr0x et de nombreux contributeurs.</li>
+          <li><a href="https://discord.gg/UPEceAz" target="_blank" rel="noopener">Phasmo-Wheel Discord</a> pour en savoir plus.</li>
+          <li>Site cr&eacute;&eacute; par <a href="https://steamcommunity.com/profiles/76561198042481118/" target="_blank" rel="noopener">Koga</a> (Traduction FR et edits Ramlethal).</li>
+          <li>Code open-source sur <a href="https://github.com/samanime/phasmo-wheel" target="_blank" rel="noopener">GitHub</a>.</li>
         </ul>
       </div>
     `;

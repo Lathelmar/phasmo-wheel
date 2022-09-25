@@ -1,25 +1,25 @@
 - id: emf
-  name: EMF Reader
+  name: Lecteur EMF
   min: 1
   max: 2
 - id: basic
-  name: Flashlight
+  name: Lampe de poche
   min: 1
   max: 4
 - id: photo
-  name: Photo Camera
+  name: Appareil photo
   min: 1
   max: 3
 - id: lighter
-  name: Lighter
+  name: Briquet
   min: 0
   max: 2
 - id: candle
-  name: Candle
+  name: Bougie
   min: 0
   max: 4
 - id: uv
-  name: UV Light
+  name: Lampe UV
   min: 1
   max: 2
 - id: crucifix
@@ -27,7 +27,7 @@
   min: 0
   max: 2
 - id: video
-  name: Video Camera
+  name: Caméra vidéo
   min: 1
   max: 6
 - id: box
@@ -35,54 +35,54 @@
   min: 1
   max: 2
 - id: salt
-  name: Salt
+  name: Sel
   min: 0
   max: 2
 - id: smudge
-  name: Smudge Stick
+  name: Encent
   min: 0
   max: 4
 - id: tripod
-  name: Tripod
+  name: Trépied
   min: 0
   max: 5
 - id: strong
-  name: Strong Flashlight
+  name: Lampe de poche puissante
   min: 0
   max: 4
 - id: motion
-  name: Motion Sensor
+  name: Détecteur de mouvement
   min: 0
   max: 4
 - id: sound
-  name: Sound Sensor
+  name: Capteur de son
   min: 0
   max: 4
 - id: thermometer
-  name: Thermometer
+  name: Thermomètre
   min: 0
   max: 3
 - id: pills
-  name: Sanity Pills
+  name: Pilule de santé mentale
   min: 0
   max: 4
 - id: book
-  name: Ghost Writing Book
+  name: Livre
   min: 1
   max: 2
 - id: infrared
-  name: Infrared Light Sensor
+  name: Projecteur D.O.T.S
   min: 0
   max: 4
 - id: parabolic
-  name: Parabolic Microphone
+  name: Microphone parabolique
   min: 0
   max: 2
 - id: glowstick
-  name: Glowstick
+  name: Bâton lumineux
   min: 0
   max: 2
 - id: head-camera
-  name: Head Mounted Camera
+  name: Caméra frontale
   min: 0
   max: 4

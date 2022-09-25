@@ -1,47 +1,47 @@
 - id: 1
-  name: Candle Only
-  summary: A candle is the only light source you may carry
+  name: Bougie uniquement
+  summary: Une bougie est la seule source de lumière que vous pouvez porter sur vous.
   reduce:
     basic: 1
     strong: 1
     uv: 1
 - id: 2
-  name: UV Light Only
-  summary: A UV light is the only light source you may carry
+  name: Lumière UV uniquement
+  summary: Une lampe UV est la seule source de lumière que vous pouvez porter sur vous.
   reduce:
     basic: 1
     strong: 1
     candle: 1
 - id: 3
-  name: Basic Flashlight
-  summary: A basic flashlight is the only light source you may carry
+  name: Lampe de poche basique
+  summary: Une lampe de poche basique est la seule source de lumière que vous pouvez transporter.
   reduce:
     strong: 1
     uv: 1
     candle: 1
 - id: 4
-  name: Wall Hugger
-  summary: You can't carry any light source
+  name: Le mange lumière
+  summary: Vous ne pouvez pas transporter de source de lumière
   reduce:
     strong: 1
     uv: 1
     candle: 1
     basic: 1
 - id: 5
-  name: Lone Wolf
-  summary: You must go into the house alone and find the ghost room!
+  name: Loup solitaire
+  summary: Vous devez entrer seul dans la maison et trouver la chambre du fantôme avant que votre équipe vous rejoigne
 - id: 6
-  name: Say Cheese
-  summary: You must get a picture of the ghost before you can leave the house!
+  name: Cheeese
+  summary: Tu dois prendre une photo du fantôme avant de pouvoir sortir de la maison (pas de retour au van avant ça) !
 - id: 7
   name: Stalker
-  summary: You must get a picture of the ghost before you can leave the house!
+  summary: Tu dois prendre une photo du fantôme avant de pouvoir finir la mission !
 - id: 8
-  name: This is my house now
-  summary: You must remain in the house until you have all your evidence!
+  name: C'est ma maison
+  summary: Vous devez rester dans la maison jusqu'à ce que vous ayez toutes les preuves !
 - id: 9
-  name: Human Camera
-  summary: You must take a head cam and turn your light source off while in the ghost room looking for orbs
+  name: Caméra humaine
+  summary: Vous devez prendre une caméra frontale et éteindre votre source de lumière lorsque vous êtes dans la salle des fantômes pour que votre équipe cherche des orbes.
   reduce:
     tripod: 5
     video: 6
@@ -49,77 +49,75 @@
     head-camera: 1
 - id: 10
   name: Van Andy
-  summary: You must remain in the van at all times!
-  description: You are <u>not</u> allowed to bring stuff to the door once the house door has been opened!
+  summary: Vous devez rester dans le van toute la partie !
+  description: Vous n'êtes <u>pas</u> autorisé à sortir des équipements du van !
   reduce:
     head-camera: 1
 - id: 11
-  name: Double Whammy
-  summary: You get two personal punishments
+  name: Coup dur
+  summary: Vous recevez deux règles
   description: |
-    Spin the wheel two more times and do both punishments.
-    If they directly conflict with one another, reroll the second.
-    <b>Note</b>: The "Items to Bring" section may not be correct.
+    Faites tourner la roue deux fois de plus et suivez les deux règles.
+    Si elles entrent directement en conflit l'une avec l'autre, relancez la seconde.
+    <b>Note</b>: La section "Equipements à prendre" peut ne pas être correcte.
 - id: 12
-  name: Hoarder
-  summary: You must bring all items you can carry on the map into the ghost room.
+  name: Thésauriseur
+  summary: Vous devez apporter tous les objets que vous pouvez porter dans la pièce du fantôme.
   description: |
-    Map must be changed to a street house or farm house.
-    You must open all doors, drawers, and cabinets.
+    La carte doit être changée en une maison de rue ou une maison de ferme.
+    Vous devez ouvrir toutes les portes, tiroirs et armoires.
 - id: 13
-  name: Art School Dropout
-  summary: You must make a masterpiece in the ghost room and photograph it.
+  name: Artiste refoulé
+  summary: Vous devez réaliser un chef-d'oeuvre dans la salle de l'entité et le photographier.
   require:
     photo: 1
 - id: 14
   name: Left 4 Dead
-  summary: You must survive at least one ghost hunt without closing any doors.
+  summary: Vous devez survivre à au moins une chasse sans fermer aucune porte.
   description: |
-    Teammates are not allowed to close the door for you.
+    Vos coéquipiers ne sont pas autorisés à fermer la porte pour vous.
 - id: 15
-  name: Wild Card
-  summary: Roll for another punishment and swap with another player if you wish.
+  name: Joker
+  summary: Relancez la règle et échangez avec un autre joueur si vous le souhaitez.
 - id: 16
-  name: Plumbers Crack
-  summary: You must find dirty water and photography it.
+  name: Plombier
+  summary: Tu dois trouver de l'eau sale et la photographier.
   description: |
-    If you fail, your teammates must sacrifice you to the water gods by a sink in a ritualistic manner.
+    Si vous échouez, vos coéquipiers doivent vous sacrifier aux dieux de l'eau près d'un évier à l'aide d'un rituel.
   require:
     photo: 1
 - id: 17
-  name: Housewife
-  summary: Clean-up and set a table for two
+  name: Femme au foyer
+  summary: Nettoyer et dresser une table pour deux
   description: |
-    Map must be changed to a street or farm house.
-    You need to set a table for two and put away any other
-    dishes or food items that are out of place away in cabinets.
+    La carte doit être changée en une rue ou une ferme.
+    Vous devez dresser une table pour deux et
+    ranger la vaisselle ou les aliments qui ne sont pas à leur place dans les armoires.
 - id: 18
-  name: Kleptomaniac
-  summary: Fill your pockets with 3 interesting or unique items your teammates will like.
+  name: Kleptomane
+  summary: Remplissez vos poches de 3 articles intéressants ou uniques qui plairont à vos coéquipiers.
   description: |
-    Your teammates must vote on your items' worthiness.
-    If you fail, you get one more chance to get three more items.
-
-    If you fail again, you must take an extra punishment next round.
+    Vos coéquipiers doivent voter sur la valeur de vos objets.
+    Si ils ne sont pas d'accords sur le même objets, vous recevez une règle supplémentaire à la prochaine partie
 - id: 19
   name: Mission Impossible
-  summary: Find the bone or Ouija board in the Asylum or face more punishment next round.
+  summary: Trouvez l'os ou la planche Ouija dans l'asile ou vous risquez d'être encore plus puni au prochain tour.
   description: |
-    The map must be changed to Asylum.
-    If you fail to find either, each teammate gets to add an additional punishment next round.
+    La carte doit être changée en Asile.
+    Si vous ne trouvez ni l'un ni l'autre, vous recevez une règle supplémentaires au prochain tour
 
-    If you find both, you may pass this punishment to a teammate of your choice.
+    Si vous trouvez les deux, vous pouvez transmettre cette punition à un coéquipier de votre choix.
 - id: 20
-  name: I got bills I gotta pay
-  summary: Turn on anything and everything
+  name: J'ai des factures à payer
+  summary: Allumez tout et n'importe quoi
   description: |
-    Sinks, TVs, radios, lights, etc.
+    Éviers, téléviseurs, radios, lumières, etc.
 
-    Make sure you keep the breaker on at all times so be careful.
+    Assurez-vous de garder le disjoncteur allumé tout le temps, soyez prudent.
 - id: 21
   name: Moonwalker
-  summary: You must walk backwards at all times
+  summary: Vous devez marcher en arrière à tout moment. HI HIIIII
 - id: 22
   name: The Chosen One
-  summary: You get no personal punishment; all punishments are void
-  description: You must handpick team an dpersonal punishments for team
+  summary: Vous ne recevez aucune punition personnelle ; toutes les punitions sont nulles.
+  description: Vous devez choisir les punitions d'équipe et personnelles pour l'équipe.

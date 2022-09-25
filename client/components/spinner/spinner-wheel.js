@@ -80,7 +80,7 @@ class SpinnerWheel extends BaseElement {
   tick = () => {
     const currentRule = this.currentRule;
     const now = Date.now();
-    const delta = Math.max(now - this.lastTick, 0.001) / 1000; // to avoid divide by 0
+    const delta = Math.max(now - this.lastTick, 0.001) / 200; // to avoid divide by 0
     this.lastTick = now;
 
     this.velocity += this.acceleration * delta;

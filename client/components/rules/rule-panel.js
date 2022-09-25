@@ -13,8 +13,8 @@ class RulePanel extends BaseElement {
 
     return html`
       <buttons>
-        <button @click=${handleAll}>All</button>
-        <button @click=${handleNone}>None</button>
+        <button @click=${handleAll}>Tous</button>
+        <button @click=${handleNone}>Aucun</button>
       </buttons>
       <ul>
         ${rules.map(({ active, name, summary, description, weight = 1.0, restrict = [] }, index) => html`

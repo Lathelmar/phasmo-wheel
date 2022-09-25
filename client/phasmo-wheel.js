@@ -61,7 +61,7 @@ class PhasmoWheel extends BaseElement {
     super();
 
     this.showSidebar = ITEMS_SIDEBAR;
-    this.names = ['Player 1', 'Player 2', 'Player 3', 'Player 4'];
+    this.names = ['Joueur 1', 'Joueur 2', 'Joueur 3', 'Joueur 4'];
     this.currentPersonalRules = new Array(4).fill(undefined);
 
     // noinspection JSIgnoredPromiseFromCall
@@ -131,14 +131,14 @@ class PhasmoWheel extends BaseElement {
         </spin-all>
       </main>
       <rule-sidebar
-        title="Team Rules"
+        title="R&egrave;gles d'&eacute;quipe"
         class="sidebar"
         ?show=${showSidebar === TEAM_SIDEBAR}
         .rules=${teamRules}
         @change=${handleTeamChange}
       ></rule-sidebar>
       <rule-sidebar 
-        title="Personal Rules"
+        title="R&egrave;gles personnelles"
         class="sidebar"
         ?show=${showSidebar === PERSONAL_SIDEBAR}
         .rules=${personalRules}

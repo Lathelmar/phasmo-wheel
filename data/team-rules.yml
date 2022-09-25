@@ -1,6 +1,6 @@
 - id: 1
-  name: Back to Basics
-  summary: You can only add required team or personal punishment items only!
+  name: Retour aux sources
+  summary: Vous ne pouvez ajouter que les éléments obligatoires de l'équipe ou de la punition personnelle !
   restrict:
     emf: 1
     basic: 1
@@ -26,133 +26,131 @@
     head-camera: 0
 - id: 2
   name: Over and Out
-  summary: No radio chat, local only!
+  summary: Pas radio, chat local uniquement !
 - id: 3
-  name: I don't have a problem
-  summary: No pills!
+  name: Mais si, jui très net
+  summary: Pas de pilules !
   restrict:
     pills: 0
 - id: 4
-  name: Can you hear me now?
-  summary:  The Parabolic Mic is the only scanning tool allowed to find the ghost room
+  name: Est-ce que tu m'entends eh oh ?
+  summary:  Le micro parabolique est le seul outil de autorisé pour trouver la pièce de l'entité.
   description: |
-    You must use only sensors (motion, light, infrared) to confirm the room before looking for evidence
+    Vous devez utiliser uniquement des capteurs (mouvement, lumière, infrarouge) pour confirmer la pièce avant de chercher des preuves.
 - id: 5
-  name: Rave Room
-  summary: Shut that power off and only use glowsticks to light the ghost room
+  name: Party hard
+  summary: Coupez le courant et n'utilisez que des bâtons lumineux pour éclairer la pièce de l'entité.
   description: |
-    Personal light sources are not allowed in the ghost room!
+    Les sources de lumière personnelles ne sont pas autorisées dans la pièce de l'entité.
 - id: 6
-  name: Romantic Getaway
-  summary: Candles must be used to light the ghost room
+  name: Escapade romantique
+  summary: Des bougies doivent être utilisées pour éclairer la chambre de l'entité.
   description: |
-    No other light sources are allowed in the ghost room, including personal
-    If there is a door, it must remain closed while investigating
+    Aucune autre source de lumière n'est autorisée dans la chambre de l'entité, y compris la lumière personnelle.
+    S'il y a une porte, elle doit rester fermée pendant l'enquête dans la pièce.
   required:
     candle: 1
 - id: 7
-  name: Atheist
-  summary: No crucifix or smudge sticks
+  name: Athé
+  summary: Pas de crucifix ni de bâtons d'encent
   restrict:
     crucifix: 0
     smudge: 0
 - id: 8
-  name: Grab n' Go
-  summary: Team can only bring what they can carry
+  name: Deliveroo
+  summary: L'équipe ne peut apporter que ce qu'elle peut porter
   description: |
-    No item swaps and team can only use head cams to look for orbs!
+    Pas d'échange d'objets et l'équipe ne peut utiliser que des caméras frontales pour chercher des orbes !
 - id: 9
-  name: Double or Nothing
-  summary: Yay! Roll for two random team punishments.
-  description: |
-    If you get "Nothing" on either roll, you're safe, no team punishment.
+  name: Quitte ou double
+  summary: Yay! Relancez la roue deux fois. Si vous obtenez "Rien", vous n'avez pas de punition d'équipe pour cette partie.
 - id: 10
-  name: Nothing
-  summary: Roll again
+  name: Rien
+  summary: Relancez la roue
   description: |
-    If this was for "Double or Nothing" you have no team punishment and don't have to roll again.
+    Si c'était pour "quitte ou double", vous n'avez pas de punition d'équipe et vous n'avez pas à relancer.
 - id: 11
-  name: Quarantine
-  summary: Only one person per room, two in large, but maintain social distance and all costs
+  name: Quarantaine
+  summary: Une seule personne par pièce, deux dans les grandes, mais maintenez la distance sociale a tout prix.
 - id: 12
-  name: No Running!
-  summary: Team cannot speed walk
+  name: Asthmatique
+  summary: L'équipe ne peut pas courir.
 - id: 13
   name: EMP
-  summary: Team is only allowed one candle, which must stay in the ghost room.
+  summary: L'équipe n'a droit qu'à une seule bougie, qui doit rester dans la pièce de l'entité.
   description: |
-    Turn off the power.
+    Coupez le courant pendant toute la partie.
   restrict:
     candle: 1
     strong: 0
     basis: 0
     uv: 1
 - id: 14
-  name: Storm Area 51
-  summary: "They Can't Stop All of Us"
+  name: Tempête de la Zone 51
+  summary: "Ils ne peuvent pas tous nous arrêter"
   description: |
-    Everyone must "Naruto run" (look down) while holding shift
+    Tout le monde doit "Naruto run" (regarder vers le bas) en maintenant Shift.
 - id: 15
-  name: Cat's got your tongue
-  summary: No talking at all!
-  description: Find a new way to talk with your team before loading into the van
+  name: Langue au chat
+  summary: Ne pas parler du tout !
+  description: Trouvez une nouvelle façon de parler avec votre équipe avant de quitter le camion.
 - id: 16
-  name: Insane in the Membrane
-  summary: Team must have 0% sanity before leaving
+  name: Montagne de la folie
+  summary: L'équipe doit avoir 0% de santé mentale avant de partir
   description: |
-    If you have a "Van Andy", they must wait until team has collected all evidence then they can go insane alone in the house
+    Si vous avez un "Van Andy", il doit attendre que l'équipe ait rassemblé toutes les preuves, puis il peut devenir fou seul dans la maison.
 - id: 17
-  name: Pop a Squat
-  summary: Team must crouch at alll times outside the van
+  name: Squat
+  summary: L'équipe doit rester accroupie à l'extérieur du van.
   description: |
-    You are allowed to stand to take a picture of dirty water or fingerprints
+    Vous êtes autorisé à vous lever pour prendre une photo d'eau sale ou d'empreintes digitales.
 - id: 18
   name: Forever Alone
-  summary: Only one person is allowed in the house at a time
+  summary: Une seule personne à la fois est autorisée dans la maison.
   description: |
-    What you grab is what you get; no item swaps or dropping items in the house
-    Team must rotate every 3 minutes
-    If you have a "Lone Wolf", they must complete their mission first
-    Reroll anyone who gets "Stalker" or "This is my house now"
-    If you get "Say Cheese", you are allowed to leave house to rotate
+    Ce que vous prenez est ce que vous obtenez ; pas d'échange d'objets ni d'abandon d'objets dans la maison.
+    L'équipe doit se relayer toutes les 3 minutes
+    Si vous avez un "Loup solitaire", il doit d'abord accomplir sa mission.
+    Relancez tous ceux qui obtiennent "Stalker" ou "C'est ma maison".
+    Si vous obtenez "Cheeese", vous êtes autorisé à quitter la maison pour faire des rotations.
 - id: 19
   name: Tag Team
-  summary: Teams of 2, only one person from each team in the house at a time
+  summary: Équipes de 2, une seule personne de chaque équipe dans la maison à la fois.
   description: |
-    You are allowed to bring a candle and one other item, no flashlight
-    The team that finds evidence, completes an objective or finds a ghost room using the item they brough in gets a point
-    A confirmed photo is worth 2 points
-    Complete 6 rounds, 2 minutes each round
-    If you don't get all the evidence, you must guess
-    Guessing the ghost correctly is worth 3 points
-    The members of the team with the least number of points each receive an extra personal punishment
+    Vous êtes autorisé à apporter une bougie et un autre objet, pas de lampe de poche.
+    L'équipe qui trouve des preuves, remplit un objectif ou trouve la pièce de l'entité en utilisant l'objet qu'elle a apporté obtient un point.
+    Une photo confirmée vaut 2 points
+    Complétez 6 manches au total, de 2 minutes chacunes (relayez-vous toutes les 2 minutes)
+    Si vous n'avez pas toutes les preuves, vous devez deviner
+    Deviner l'entité correctement vaut 3 points.
+    Les membres de l'équipe ayant le moins de points reçoivent chacun une règle personnelle supplémentaire pour la prochaine partie
   restrict:
     basic: 0
     strong: 0
   required:
     candle: 2
 - id: 20
-  name: Rat Race
-  summary: Set a timer for 5 minutes, adding 1 minute when the team completes an object or finds evidence
-  description: When the timer runs out, you must leave
+  name: La course du rat
+  summary: Réglez un minuteur pour 5 minutes, en ajoutant 1 minute lorsque l'équipe complète un objectif ou trouve des preuves.
+  description: Quand le temps est écoulé, vous devez partir.
 - id: 21
   name: Yeet
-  summary: Yeet everything into the house, team cannot leave the house until everyone is ready to close the van door
-  description: Team is not allowed to look for orbs before closing the van door
+  summary: Saccage tout dans la maison, l'équipe ne peut pas quitter la maison avant que tout le monde soit prêt à fermer la porte du van (fin d'enquête).
+  description: L'équipe n'est pas autorisée à chercher des orbes avant de fermer la porte du van.
 - id: 22
-  name: Back in my day
-  summary: Turn off the power, no battery powered items
+  name: De mon temps...
+  summary: Coupez le courant, pas d'objets alimentés par des piles/batteries
 - id: 23
-  name: Catch me if you can
-  summary: Once you find the ghost room, you can only survive hunts by running away from the ghost
+  name: Attrape-moi si tu peux
+  summary: Une fois que vous avez trouvé la salle des fantômes, vous ne pouvez survivre aux chasses qu'en fuyant les fantômes (se cacher c'est tricher).
 - id: 24
-  name: You can't see me
-  summary: Once a hunt starts, you must turn off your flashlight, crounch, and look as far downwards as you can
-  description: You can only reach a hiding place by knowing where you are. You cannot look up until the hunt is over
+  name: On me voit, on me voit plus
+  summary: Dès qu'une chasse commence, vous devez éteindre votre lampe de poche, vous accrompir, et regarder vos pieds le plus possible
+  description: Vous ne pouvez atteindre une cachette que si vous savez où vous êtes. Vous ne pouvez pas regarder en l'air jusqu'à ce que la chasse soit terminée.
 - id: 25
-  name: Full house
-  summary: Everyone gets two personal punishments and three team punishments
-  description: Double whammy will stack
+  name: C'est ma tournée
+  summary: Tout le monde reçoit deux règles personnelles pour la partie (relancer la roue après avoir pris connaissance de la première règle)
+  description: La règle Coup dur se cumule
 - id: 26
   name: Vigilant
-  summary: No investigative items allowed, team must determine the ghost type by behavior alone
+  summary: Aucun objet d'investigation n'est autorisé, l'équipe doit déterminer le type de fantôme par son comportement.
