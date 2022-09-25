@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r esm ./server",
+    "start": "npm start",
     "start:watch": "nodemon -r esm -w server ./server ",
     "build:watch": "run-s clean & run-p \"build:*:watch\"",
     "build:js": "babel client -d dist/js",
